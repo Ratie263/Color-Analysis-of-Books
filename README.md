@@ -9,7 +9,7 @@ The learning objectives of this assignment are threefold:
 2. Practice using ``Map``s!
 3. Do some Data Science.
 
-***Due Date***: September 27, 2018.
+***Due Date***: October 4, 2018.
 
 Remember that we will have P3 opening on that day, so don't save it until the last minute!
 
