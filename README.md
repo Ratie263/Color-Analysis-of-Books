@@ -1,5 +1,5 @@
 # CSC212P3
-Counting Word Colors in Books!
+Counting Word Colors in Books! Import this in Eclipse early and often. Don't forget to Configure as Maven Project. Instructions are available on older assignments.
 
 ![Solution Screenshot](P3Frankenstein.png)
 
@@ -11,15 +11,17 @@ The learning objectives of this assignment are threefold:
 
 ***Due Date***: October 4, 2018.
 
-Remember that we will have P3 opening on that day, so don't save it until the last minute!
+Remember that we will have P4 opening on that day, so don't save it until the last minute!
 
 # Rubric
 
 ## Reflection (=20)
 
-As discussed in class, we will now be writing reflections for our programming assignments. This can be done in any software you like, provided you upload a PDF to moodle in addition to the zip file for the code.
+As we will discuss in class, we will now be writing reflections for our programming assignments. This can be done in any software you like, provided you upload a PDF to moodle in addition to the zip file for the code.
 
-I expect you to take notes as you do the assignment and turn in at least 10 bullet points for this reflection. They can be distributed across categories as you wish.
+Your reflection should identify any partners you worked with in Lab
+
+I expect you to take notes as you do the assignment and turn in at least 10 bullet points for this reflection. They can be distributed across the two following categories as you wish.
 
 ### Lessons Learned
 
