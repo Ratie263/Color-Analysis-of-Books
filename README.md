@@ -44,8 +44,8 @@ This includes that your code should be professional.
  - Any methods or class-level variables left without a Javadoc comment (``/** */``) will result in the loss of a point.
  - Have comments explaining tricky code! (My video has my voice as a comment, so try to comment code you found tricky in it).
 
-## Find a project Gutenberg book that you prefer to Frankenstein.
-We shall do more data science as a group than separately. Make sure you get the UTF-8 Text version. Download it and put it in src/main/resources.
+## Find a [Project Gutenberg](http://www.gutenberg.org/) book that you prefer to Frankenstein.
+Make sure you get the UTF-8 Text version. Download it and put it in src/main/resources.
 
 ## Word Counting (=15)
  - Count up the words in your book.
