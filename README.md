@@ -58,10 +58,14 @@ Basically, you will need a code block like this (demo'd in the video) inside of 
 try {
   // File Opening and Reading Code
 } catch (FileNotFoundException fnfe) {
+  // Message to user.
   System.out.println(...);
+  // Quit with any non-zero error code.
   System.exit(-2);
 } catch (IOException ioe) {
+  // Message to user.
   System.out.println(...);
+  // Quit with any non-zero error code.
   System.exit(-1);
 }
 ```
