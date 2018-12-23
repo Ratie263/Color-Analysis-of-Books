@@ -9,7 +9,12 @@ import java.util.Random;
 
 import me.jjfoley.gfx.GFX;
 import me.jjfoley.gfx.TextBox;
-
+/**
+ * This class takes the words in our book and prints them onto a wordcloud 
+ * according to how frequently they appear
+ * @author ratidzo 
+ *
+ */
 public class WordCloud extends GFX {
 	/**
 	 * This is how many random locations to consider for words.
@@ -27,7 +32,7 @@ public class WordCloud extends GFX {
 	 * The word locations and colors.
 	 */
 	public Map<String, TextBox> plottedWords = new HashMap<>();
-
+	public static HTML_Colors identifier= new HTML_Colors();
 
 	/**
 	 * Implement this based of my HTMLColor example in class.
@@ -35,30 +40,12 @@ public class WordCloud extends GFX {
 	 * @param input - the color name.
 	 * @return the color itself.
 	 */
+	public static HTML_Colors colorMap = new HTML_Colors();
 	public static Color getColorByName(String input) {
-		// You probably want to keep this... (and adjust class code).
+		//We put it into lower case to match the words in our book that are also lower case
 		input = input.toLowerCase();
-		// Or you want to define capitalize(input).
-		
-		// DELETE ALL AND REPLACE:
-		if (input.equals("red")) {
-			return Color.red;
-		} else if (input.equals("blue")) {
-			return Color.blue;
-		} else if (input.equals("orange")) {
-			return Color.orange;
-		} else if (input.equals("yellow")) {
-			return Color.yellow;
-		} else if (input.equals("green")) {
-			return Color.green;
-		} else if (input.equals("magenta")) {
-			return Color.magenta;
-		} else if (input.equals("white")) {
-			return Color.white;
-		} else if (input.equals("black")) {
-			return Color.black;
-		}
-		return Color.white;
+			
+		return identifier.fromName(input);
 	}
 
 	public WordCloud(Map<String, Integer> counts) {
@@ -81,7 +68,6 @@ public class WordCloud extends GFX {
 				minCount = count;
 			}
 		}
-
 
 		// We're going to try k times to place a word randomly with no overlap, and then
 		// skip it if we can't.
@@ -159,17 +145,5 @@ public class WordCloud extends GFX {
 	 * Test the WordCloud plotting with some fake data.
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		Map<String, Integer> fakeData = new HashMap<>();
-		fakeData.put("red", 100);
-		fakeData.put("blue", 50);
-		fakeData.put("orange", 25);
-		fakeData.put("yellow", 30);
-		fakeData.put("green", 40);
-		fakeData.put("magenta", 50);
-		fakeData.put("white", 70);
-		fakeData.put("black", 80);
-		WordCloud app = new WordCloud(fakeData);
-		app.start();
-	}
+	
 }

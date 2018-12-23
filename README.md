@@ -51,24 +51,7 @@ Make sure you get the UTF-8 Text version. Download it and put it in src/main/res
  - Count up the words in your book.
  - Use my new WordSplitter class to help.
  - Resolve Eclipse's warning about not closing your file (if you follow the video code).
- - Use a try/catch statement for the errors and explain them to the user. (This means you should not change main!)
-
-Basically, you will need a code block like this (demo'd in the video) inside of ``analyze(File book)``.
-```java 
-try {
-  // File Opening and Reading Code
-} catch (FileNotFoundException fnfe) {
-  // Message to user.
-  System.out.println(...);
-  // Quit with any non-zero error code.
-  System.exit(-2);
-} catch (IOException ioe) {
-  // Message to user.
-  System.out.println(...);
-  // Quit with any non-zero error code.
-  System.exit(-1);
-}
-```
+ - Use a try/catch statement for the errors and explain them.
 
 ## HTML Named Colors (=15)
  - Take the HTMLColors class designed in class.
